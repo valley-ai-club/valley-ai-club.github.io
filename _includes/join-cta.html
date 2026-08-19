@@ -1,0 +1,13 @@
+<section class="join-section section-shell">
+  <div class="join-card">
+    <div>
+      <p class="section-kicker">{{ include.kicker | default: "Help shape the club" }}</p>
+      <h2>{{ include.heading | default: "You belong in the first group." }}</h2>
+      <p>Tell us what you want to learn, build, or contribute. The interest form takes only a few minutes.</p>
+    </div>
+    <div class="join-actions">
+      <a class="button button-yellow" href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Complete the interest form <span aria-hidden="true">&#8599;</span></a>
+      <a class="email-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </div>
+</section>

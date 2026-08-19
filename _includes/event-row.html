@@ -1,0 +1,14 @@
+{% assign event = include.event %}
+{% assign theme = site.data.themes | where: "slug", event.theme | first %}
+<article class="event-row">
+  <div class="event-row-date">
+    <time datetime="{{ event.date | date_to_xmlschema }}">
+      <span>{{ event.date | date: "%b" }}</span><strong>{{ event.date | date: "%-d" }}</strong><small>{{ event.date | date: "%Y" }}</small>
+    </time>
+  </div>
+  <div>
+    {% if theme %}<span class="theme-badge" style="--badge:{{ theme.accent }}">{{ theme.short }}</span>{% endif %}
+    <h3><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h3>
+    {% if event.subtitle %}<p>{{ event.subtitle }}.</p>{% endif %}
+  </div>
+</article>

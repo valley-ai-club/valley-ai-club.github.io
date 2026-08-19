@@ -1,0 +1,35 @@
+- slug: health
+  number: "01"
+  name: AI for Health &amp; Data Science
+  short: AI for Health
+  blurb: >-
+    Explore how data and AI can help us understand health, spot patterns,
+    and ask better questions.
+  tags: [Health data, Prediction, Responsible AI]
+  image: /assets/img/theme-health.jpg
+  alt: A wearable health tracker showing heart-rate data on a wrist
+  accent: "#ef6f61"
+
+- slug: code
+  number: "02"
+  name: Coding, Simulation &amp; Robotics
+  short: Coding &amp; Robotics
+  blurb: >-
+    Learn programming by modeling real systems, testing ideas, and connecting
+    code to the physical world.
+  tags: [Programming, Simulation, Robotics]
+  image: /assets/img/theme-code.jpg
+  alt: Two students presenting a robot design in simulation software on a classroom display
+  accent: "#177fb1"
+
+- slug: valley
+  number: "03"
+  name: AI for the Valley Community &amp; Environment
+  short: AI for the Valley
+  blurb: >-
+    Build locally meaningful projects around community needs, the environment,
+    and everyday life in the Valley.
+  tags: [Community, Environment, Local projects]
+  image: /assets/img/theme-valley.jpg
+  alt: Hillside view over a San Fernando Valley neighbourhood
+  accent: "#65a86e"

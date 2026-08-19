@@ -1,0 +1,46 @@
+title: The Valley AI Club
+tagline: San Fernando Valley Youth AI Community
+description: >-
+  A youth-led AI community for middle school and high school students
+  across the San Fernando Valley.
+url: https://valley-ai-club.github.io
+baseurl: ""
+
+email: sfvalleyaiclub@gmail.com
+interest_form: https://forms.gle/at6Uc2pfSiB53pCx8
+
+# Events are dated in the future by design; without this Jekyll treats
+# an upcoming event as an unpublished draft and never builds its page.
+future: true
+
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+
+nav:
+  - title: Home
+    url: /
+  - title: Events
+    url: /events/
+  - title: About
+    url: /about/
+  - title: Join
+    url: /join/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

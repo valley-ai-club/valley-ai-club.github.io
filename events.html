@@ -1,0 +1,43 @@
+---
+layout: page
+title: Events
+kicker: What's happening
+heading: Events
+intro: Workshops, panels, and challenges open to middle school and high school students across the Valley.
+permalink: /events/
+description: Upcoming and past events from The Valley AI Club, including workshops, panels, datathons, and hackathons.
+---
+{% assign upcoming = site.events | where_exp: "e", "e.date >= site.time" | sort: "date" %}
+{% assign past = site.events | where_exp: "e", "e.date < site.time" | sort: "date" | reverse %}
+
+<section class="section-shell events-page">
+  {% if upcoming.size > 0 %}
+    <h2 class="events-group-title">Upcoming</h2>
+    {% for event in upcoming %}
+      {% include event-card.html event=event %}
+    {% endfor %}
+  {% else %}
+    <div class="empty-state">
+      <h2>No events on the calendar right now.</h2>
+      <p>We're planning the next one. Join the interest list and we'll email you when it's scheduled.</p>
+      <a class="button" href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Join the interest list <span aria-hidden="true">&#8599;</span></a>
+    </div>
+  {% endif %}
+
+  {% if past.size > 0 %}
+    <h2 class="events-group-title">Past events</h2>
+    <div class="event-rows">
+      {% for event in past %}{% include event-row.html event=event %}{% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+<section class="section-shell themes-note">
+  <p class="section-kicker">Themes</p>
+  <p>Every event is tagged with one of our three themes, so you can follow the strand that interests you as the calendar grows.</p>
+  <ul class="theme-legend">
+    {% for theme in site.data.themes %}
+      <li><span class="theme-badge" style="--badge:{{ theme.accent }}">{{ theme.short }}</span></li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,15 @@
+- label: Learn
+  name: AI Workshops
+  blurb: Friendly, hands-on introductions for students at any experience level.
+- label: Immerse
+  name: AI Camps
+  blurb: Longer sessions to go deeper on a theme with mentors alongside you.
+- label: Explore
+  name: Datathon
+  blurb: Work with a real dataset, form a question, and communicate what you discover.
+- label: Build
+  name: Hackathon
+  blurb: Team up to design and build a useful AI-powered project around a shared challenge.
+- label: Practice
+  name: Codathon
+  blurb: Practice programming together through focused challenges and peer support.

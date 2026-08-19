@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% assign page_title = page.title | default: site.title %}
+{% if page.url == "/" %}
+  <title>{{ site.title }} | Learn, Build, Serve</title>
+{% else %}
+  <title>{{ page_title }} | {{ site.title }}</title>
+{% endif %}
+{% assign page_desc = page.description | default: site.description %}
+<meta name="description" content="{{ page_desc | strip_newlines | strip }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/assets/valley-ai-symbol.png' | relative_url }}">
+<link rel="icon" href="{{ '/assets/valley-ai-symbol.png' | relative_url }}">
+<meta name="theme-color" content="#fffdf8">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_desc | strip_newlines | strip }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/valley-ai-symbol.png' | absolute_url }}">

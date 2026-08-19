@@ -1,0 +1,31 @@
+{% assign event = include.event %}
+{% assign theme = site.data.themes | where: "slug", event.theme | first %}
+<article class="event-feature">
+  <div class="event-main">
+    <p class="event-flag"><span></span> {{ include.flag | default: "Upcoming event" }}</p>
+    <h2 class="event-title"><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h2>
+    {% if event.subtitle %}<p class="event-summary">{{ event.subtitle }}{% if event.host %}, hosted with {{ event.host }}{% endif %}.</p>{% endif %}
+    <dl class="event-facts">
+      <div>
+        <dt>When</dt>
+        <dd><time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%a, %b %-d, %Y" }}</time>{% if event.time_label %} &#183; {{ event.time_label }}{% endif %}</dd>
+      </div>
+      <div><dt>Where</dt><dd>{{ event.location }}</dd></div>
+      {% if event.opening_remarks %}<div><dt>Opening remarks</dt><dd>{{ event.opening_remarks }}</dd></div>{% endif %}
+      {% if theme %}<div><dt>Theme</dt><dd><span class="theme-badge" style="--badge:{{ theme.accent }}">{{ theme.short }}</span></dd></div>{% endif %}
+    </dl>
+    {% if event.join_url %}
+      <a class="button button-yellow event-cta" href="{{ event.join_url }}" target="_blank" rel="noreferrer">{{ event.join_label | default: "Join on Zoom" }} <span aria-hidden="true">&#8599;</span></a>
+    {% endif %}
+  </div>
+  {% if event.panelists %}
+    <div class="event-panel">
+      <p class="event-panel-title">Panelists</p>
+      <ul class="panelist-list">
+        {% for p in event.panelists %}
+          <li><strong>{{ p.name }}</strong><span>{{ p.school }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</article>

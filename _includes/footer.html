@@ -1,0 +1,11 @@
+<footer>
+  <a class="footer-brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/valley-ai-symbol.png' | relative_url }}" alt="" width="56" height="42">
+    <span><strong>{{ site.title }}</strong><small>Learn &#8226; Build &#8226; Serve the Valley</small></span>
+  </a>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    {% for item in site.nav %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </nav>
+  <p>In collaboration with CHEER</p>
+</footer>
