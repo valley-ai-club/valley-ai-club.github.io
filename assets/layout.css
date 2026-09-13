@@ -1,0 +1,85 @@
+/* Shared page shell: left navigation on desktop, compact tabs on phones. */
+.club-site{--sidebar:230px;--content-width:1100px;background:#fffdf8}
+.club-site .site-header{position:fixed;inset:0 auto 0 0;width:var(--sidebar);height:100dvh;min-height:0;padding:32px 20px 24px;display:flex;flex-direction:column;align-items:stretch;gap:0;background:#f2f6f4;border-right:1px solid #dce5e0;border-bottom:0;overflow-y:auto}
+.club-site .brand{flex-direction:column;align-items:flex-start;gap:16px;padding:0 12px}
+.club-site .brand img{width:56px;height:42px}
+.club-site .brand strong{font-size:14px;line-height:1.45;letter-spacing:.03em}
+.club-site .brand small{display:block;font-size:11px;line-height:1.5;margin-top:5px}
+.club-site .site-header .main-tabs{display:flex;flex-direction:column;gap:6px;flex-wrap:nowrap;border-top:1px solid #dce5e0;margin-top:28px;padding-top:22px}
+.club-site .main-tabs a{justify-content:flex-start;min-height:46px;padding:12px 16px;border-radius:8px;font-size:14px}
+.club-site .main-tabs a[aria-current=page]{background:#0d3155;color:#fff}
+.club-site .sidebar-note{margin-top:auto;padding:28px 12px 0;color:#607487;font-size:11px;line-height:1.5}
+.club-site .site-content{margin-left:var(--sidebar);min-height:100svh;display:flex;flex-direction:column;min-width:0}
+.club-site .site-content>main{flex:1;min-width:0}
+.club-site .site-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px 20px;padding:22px 40px;border-top:1px solid #e2e8e5;font-size:11px;line-height:1.5;color:#607487}
+.club-site .site-footer a{overflow-wrap:anywhere}
+.club-site .welcome-page{max-width:840px;margin:0 auto;padding:clamp(60px,12vh,112px) 48px 60px}
+.welcome-kicker{font-size:11px;letter-spacing:.1em;line-height:1.6;text-transform:uppercase;color:#287a72;font-weight:700;margin-bottom:24px}
+.club-site .welcome-page h1{font-size:clamp(36px,4vw,54px);letter-spacing:-.045em;line-height:1.13}
+.club-site .welcome-page h1 em{display:inline;color:#177fb1}
+.welcome-copy{font-size:18px;line-height:1.8;max-width:610px;margin-top:28px;color:#4d667c}
+.welcome-note{font-size:14px;line-height:1.6;color:#607487;margin-top:24px;padding-top:24px;border-top:1px solid #dce5e0;max-width:610px}
+/* Keep detail pages readable in the narrower content area. */
+.club-site .section-shell{max-width:var(--content-width);padding:44px 40px}
+.club-site .page-hero .section-shell{padding-top:42px;padding-bottom:34px}
+.club-site .page-hero h1{font-size:clamp(30px,3.5vw,44px);line-height:1.15;max-width:850px}
+.club-site .page-intro{font-size:17px;line-height:1.65;margin-top:18px}
+.club-site .section-heading h2,.club-site .mentorship h2,.club-site .join-card h2{font-size:30px;line-height:1.2}
+.club-site .section-kicker{margin-bottom:12px}
+.club-site .project-feature{grid-template-columns:minmax(0,1.5fr) minmax(220px,.7fr);border-radius:20px}
+.club-site .project-copy{padding:30px}
+.club-site .project-copy h2{font-size:30px}
+.club-site .project-note{padding:30px}
+.club-site .project-note h3{font-size:22px}
+.club-site .project-invitation{margin-top:32px;padding-top:24px}
+.club-site .event-feature{grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);padding:32px;gap:28px}
+.club-site .event-title{font-size:30px}
+.club-site .event-detail-grid{grid-template-columns:minmax(0,1.3fr) minmax(240px,.7fr);gap:30px}
+.club-site .about{gap:28px 36px}
+.club-site .about-body .lead{font-size:17px}
+.club-site .theme-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
+.club-site .theme-photo{aspect-ratio:auto;height:150px}
+.club-site .theme-body{padding:20px}
+.club-site .theme-card h3{font-size:20px}
+.club-site .activity-list{margin-top:28px}
+.club-site .mentorship{padding:44px 40px;gap:32px}
+.club-site .join-card{padding:32px;gap:30px}
+.club-site .join-steps{margin-top:36px}
+@media(max-width:1100px) and (min-width:761px){
+ .club-site{--sidebar:200px}
+ .club-site .site-header{padding-left:14px;padding-right:14px}
+ .club-site .project-feature,.club-site .event-feature,.club-site .event-detail-grid,.club-site .about,.club-site .split-heading,.club-site .activities-heading,.club-site .mentorship,.club-site .join-card{grid-template-columns:1fr}
+ .club-site .project-note{border-left:0;border-top:1px solid #dce5e0}
+ .club-site .theme-grid{grid-template-columns:1fr}
+ .club-site .theme-photo{height:180px}
+ .club-site .event-detail-aside{position:static}
+ .club-site .activity-list{grid-template-columns:1fr}
+ .club-site .activity-list article:nth-child(odd){border-right:0}
+ .club-site .activity-list article:nth-child(even){padding-left:0}
+}
+@media(max-width:760px){
+ .club-site .site-header{position:relative;inset:auto;width:100%;height:auto;overflow:visible;padding:14px 16px 10px;border-right:0;border-bottom:1px solid #dce5e0}
+ .club-site .brand{flex-direction:row;align-items:center;gap:12px;padding:0}
+ .club-site .brand img{width:44px;height:34px}
+ .club-site .brand strong{font-size:12px}
+ .club-site .brand small{display:none}
+ .club-site .site-header .main-tabs{flex-direction:row;justify-content:space-between;gap:2px;flex-wrap:wrap;margin-top:12px;padding-top:10px}
+ .club-site .main-tabs a{justify-content:center;padding:10px 12px;min-height:44px;font-size:13px}
+ .club-site .sidebar-note{display:none}
+ .club-site .site-content{margin-left:0;min-height:calc(100svh - 116px)}
+ .club-site .welcome-page{padding:40px 24px}
+ .club-site .welcome-page h1{font-size:36px}
+ .welcome-kicker{font-size:10px;margin-bottom:20px}
+ .welcome-copy{font-size:16px;line-height:1.7;margin-top:24px}
+ .welcome-note{font-size:13px;margin-top:20px;padding-top:20px}
+ .club-site .site-footer{padding:18px 24px;flex-direction:column;align-items:flex-start;gap:6px;font-size:10px}
+ .club-site .section-shell{padding:30px 20px}
+ .club-site .page-hero .section-shell{padding:30px 20px}
+ .club-site .project-feature,.club-site .event-feature,.club-site .event-detail-grid,.club-site .theme-grid,.club-site .join-grid,.club-site .join-card{grid-template-columns:1fr}
+ .club-site .project-copy,.club-site .project-note,.club-site .event-feature{padding:24px}
+ .club-site .project-copy h2,.club-site .event-title{font-size:27px}
+ .club-site .theme-photo{height:160px}
+ .club-site .project-note{border-left:0;border-top:1px solid #dce5e0}
+ .club-site .mentorship{padding:30px 20px}
+}
+@media(max-width:360px){.club-site .main-tabs a{padding:10px 9px;font-size:12px}.club-site .welcome-page{padding:28px 20px}.club-site .welcome-page h1{font-size:32px}}

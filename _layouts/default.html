@@ -3,12 +3,12 @@
 <head>
 {% include head.html %}
 </head>
-<body>
+<body class="club-site{% if page.url == '/' %} home-page{% endif %}">
 <a class="skip-link" href="#main">Skip to content</a>
-<main>
-  {% include header.html %}
-  {{ content }}
+{% include header.html %}
+<div class="site-content">
+  <main>{{ content }}</main>
   {% include footer.html %}
-</main>
+</div>
 </body>
 </html>

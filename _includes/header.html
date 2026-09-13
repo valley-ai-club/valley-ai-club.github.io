@@ -1,6 +1,6 @@
 <header class="site-header">
   <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-    <img src="{{ '/assets/valley-ai-symbol.png' | relative_url }}" alt="" width="74" height="54">
+    <img src="{{ '/assets/valley-ai-symbol.png' | relative_url }}" alt="" width="56" height="42">
     <span><strong>{{ site.title }}</strong><small>{{ site.tagline }}</small></span>
   </a>
   <nav class="main-tabs" aria-label="Main navigation">
@@ -11,5 +11,5 @@
       <a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a>
     {% endfor %}
   </nav>
-  <a class="button button-small" href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Join the club <span aria-hidden="true">&#8599;</span></a>
+  <p class="sidebar-note">Learn &#8226; Build &#8226; Serve</p>
 </header>
