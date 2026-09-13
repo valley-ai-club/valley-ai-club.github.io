@@ -7,7 +7,7 @@ url: https://valleyaiclub.org
 baseurl: ""
 
 email: sfvalleyaiclub@gmail.com
-registration_url: https://valley-registration-parent-review.jin-jjzhou.chatgpt.site/?src=club_website
+registration_url: https://register.valleyaiclub.org/?src=club_website
 interest_form: https://forms.gle/at6Uc2pfSiB53pCx8
 
 # Events are dated in the future by design; without this Jekyll treats
