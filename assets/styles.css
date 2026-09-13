@@ -164,13 +164,12 @@ nav a[aria-current=page]:after{content:"";position:absolute;left:0;right:0;botto
 @media(max-width:820px){.project-feature{grid-template-columns:1fr}.project-note{border-left:0;border-top:1px solid var(--line)}.project-number{margin-bottom:16px}.hero{min-height:0}.hero-visual,.photo-frame{min-height:360px}.footer-nav{display:flex}}
 @media(max-width:560px){.site-header .main-tabs{gap:4px;justify-content:space-between}.main-tabs a{padding:10px 9px;font-size:13px}.hero{padding-top:40px;padding-bottom:40px}.home-projects{padding-top:48px}.project-feature{border-radius:20px}.project-copy .button{width:100%}.project-copy .hero-actions{align-items:stretch}.hero-visual,.photo-frame{min-height:320px}}
 
-/* Home is an introduction and directory; details live on the section pages. */
-.home-directory{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;max-width:1264px;margin:0 auto 64px;padding:0 24px}
-.home-directory>a{display:block;border-top:1px solid var(--line);padding:24px 20px;min-width:0}
-.home-directory>a+a{border-left:1px solid var(--line)}
-.home-directory strong{display:flex;justify-content:space-between;gap:12px;color:var(--navy);font-size:20px;margin-bottom:10px}
-.home-directory strong span{color:var(--teal)}
-.home-directory>a>span{display:block;color:var(--muted);font-size:14px;font-weight:400;line-height:1.6}
-.home-directory>a:hover,.home-directory>a:focus-visible{background:var(--sky)}
-@media(max-width:820px){.home-directory{grid-template-columns:repeat(2,minmax(0,1fr))}.home-directory>a:nth-child(3){border-left:0}}
-@media(max-width:560px){.home-directory{padding:0 20px;margin-bottom:36px}.home-directory>a{padding:20px 12px}.home-directory strong{font-size:18px}}
+/* A brief welcome on Home; each navigation tab opens its own page. */
+.home-intro{max-width:1160px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center;gap:64px;min-height:460px}
+.home-intro .eyebrow{margin-bottom:18px}
+.home-intro h1{font-size:clamp(36px,4vw,52px);line-height:1.1;letter-spacing:-.04em}
+.home-intro h1 em{display:inline}
+.home-intro-copy{font-size:17px;line-height:1.7;color:#4d667c;margin-top:22px;max-width:530px}
+.home-intro-image{width:100%;height:300px;object-fit:cover;border-radius:28px}
+@media(max-width:820px){.home-intro{gap:32px;padding:40px 24px}.home-intro-image{height:260px}}
+@media(max-width:560px){.home-intro{grid-template-columns:1fr;gap:24px;padding:30px 20px;min-height:0}.home-intro h1{font-size:36px}.home-intro-copy{font-size:16px;margin-top:18px}.home-intro-image{height:170px;border-radius:18px}}

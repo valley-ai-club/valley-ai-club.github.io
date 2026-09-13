@@ -2,25 +2,12 @@
 layout: default
 title: Home
 ---
-<section class="hero" id="main">
-  <div class="hero-copy">
-    <p class="eyebrow"><span></span> Youth-led in the San Fernando Valley</p>
-    <h1>Learn AI. Build together. <em>Serve the Valley.</em></h1>
-    <p class="hero-description">A welcoming AI community for middle school and high school students&#8212;with space to explore, create, and learn alongside college mentors.</p>
+<section class="home-intro" id="main" aria-labelledby="welcome-heading">
+  <div>
+    <p class="eyebrow"><span></span> The Valley AI Club</p>
+    <h1 id="welcome-heading">Learn. Build.<br><em>Serve the Valley.</em></h1>
+    <p class="home-intro-copy">A youth-led community where students in grades 6–12 explore AI, build projects, and serve the San Fernando Valley with support from college mentors.</p>
     <p class="microcopy">No experience required. Curiosity is enough.</p>
   </div>
-  <div class="hero-visual">
-    <div class="photo-frame">
-      <img src="{{ '/assets/youth-mentoring.jpg' | relative_url }}" alt="A mentor helping two young students work together at a computer" width="1800" height="1200">
-    </div>
-    <div class="hero-note note-top"><strong>Grades 6&#8211;12</strong><span>and college mentors</span></div>
-    <div class="hero-note note-bottom"><strong>Learn &#8226; Build &#8226; Serve</strong><span>AI for our community</span></div>
-  </div>
+  <img class="home-intro-image" src="{{ '/assets/youth-mentoring.jpg' | relative_url }}" alt="Students learning together with a mentor" width="1800" height="1200">
 </section>
-
-<nav class="home-directory" aria-label="Explore the club">
-  <a href="{{ '/projects/' | relative_url }}"><strong>Projects <span aria-hidden="true">&#8594;</span></strong><span>Explore our community work.</span></a>
-  <a href="{{ '/events/' | relative_url }}"><strong>Events <span aria-hidden="true">&#8594;</span></strong><span>Find upcoming and past activities.</span></a>
-  <a href="{{ '/about/' | relative_url }}"><strong>About <span aria-hidden="true">&#8594;</span></strong><span>Get to know the club.</span></a>
-  <a href="{{ '/join/' | relative_url }}"><strong>Join <span aria-hidden="true">&#8594;</span></strong><span>Learn, volunteer, or mentor.</span></a>
-</nav>
