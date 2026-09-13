@@ -5,6 +5,7 @@ layout: default
 <section class="page-hero">
   <div class="section-shell">
     <p class="section-kicker"><a href="{{ '/events/' | relative_url }}">&#8592; All events</a></p>
+    {% if page.date < site.time %}<p class="section-kicker">Past event</p>{% endif %}
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}<p class="page-intro">{{ page.subtitle }}.</p>{% endif %}
   </div>
@@ -22,7 +23,7 @@ layout: default
         {% if page.opening_remarks %}<div><dt>Opening remarks</dt><dd>{{ page.opening_remarks }}</dd></div>{% endif %}
         {% if theme %}<div><dt>Theme</dt><dd><span class="theme-badge" style="--badge:{{ theme.accent }}">{{ theme.short }}</span></dd></div>{% endif %}
       </dl>
-      {% if page.join_url %}
+      {% if page.join_url and page.date >= site.time %}
         <a class="button button-yellow" href="{{ page.join_url }}" target="_blank" rel="noreferrer">{{ page.join_label | default: "Join on Zoom" }} <span aria-hidden="true">&#8599;</span></a>
       {% endif %}
       {% if page.panelists %}

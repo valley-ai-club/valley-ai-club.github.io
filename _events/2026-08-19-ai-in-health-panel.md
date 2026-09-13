@@ -25,15 +25,14 @@ panelists:
     school: Caltech 2030
 ---
 
-Six students who are already on the path share how they got there. The panel
-covers how they chose what to study, how they found summer research, what
+Six students shared their journeys in college and research. The panel covered how they chose what to study, how they found summer research, what
 actually mattered in their college applications, and what they wish they had
 known in middle and high school.
 
-Open to all middle school and high school students across the San Fernando
-Valley, and to their families. No experience with AI or research is needed.
+This event was open to middle school and high school students across the San Fernando
+Valley and their families.
 
-### What we'll cover
+### Panel topics
 
 - Finding and applying for summer research and internships
 - How AI and health projects fit into a college application

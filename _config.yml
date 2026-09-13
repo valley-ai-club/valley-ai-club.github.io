@@ -7,6 +7,7 @@ url: https://valley-ai-club.github.io
 baseurl: ""
 
 email: sfvalleyaiclub@gmail.com
+registration_url: https://valley-registration-parent-review.jin-jjzhou.chatgpt.site/?src=club_website
 interest_form: https://forms.gle/at6Uc2pfSiB53pCx8
 
 # Events are dated in the future by design; without this Jekyll treats
@@ -28,6 +29,8 @@ defaults:
 nav:
   - title: Home
     url: /
+  - title: Projects
+    url: /projects/
   - title: Events
     url: /events/
   - title: About

@@ -3,7 +3,7 @@
     <img src="{{ '/assets/valley-ai-symbol.png' | relative_url }}" alt="" width="74" height="54">
     <span><strong>{{ site.title }}</strong><small>{{ site.tagline }}</small></span>
   </a>
-  <nav aria-label="Main navigation">
+  <nav class="main-tabs" aria-label="Main navigation">
     {% for item in site.nav %}
       {% assign is_current = false %}
       {% if item.url == "/" and page.url == "/" %}{% assign is_current = true %}

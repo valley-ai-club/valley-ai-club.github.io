@@ -32,14 +32,14 @@ Learn programming by modeling real systems, testing ideas, and connecting code t
 
 Build locally meaningful projects around community needs, the environment, and everyday life in the Valley.
 
-## Upcoming events
+## Past events
 
 ### AI in Health: Student Journeys and Future Pathways
 
 A student panel on college applications, summer research, and what comes next, hosted with the CHEER Youth Group.
 
 - **When:** Wednesday, August 19, 4:00–5:30 PM PDT
-- **Where:** Online via [Zoom](https://ucla.zoom.us/j/99291870470)
+- **Where:** Online via Zoom
 - **Opening remarks:** UCLA Fielding School of Public Health Senior Associate Dean
 - **Panelists:** Aaron (MIT 2030), Arin (Stanford 2028), Royce (MIT 2030), Siray (Columbia 2029), Sophia (Stanford 2029), Vincent (Caltech 2030)
 
@@ -132,3 +132,11 @@ Interested in learning, building, mentoring, or contributing?
 
 - [Complete the interest form](https://forms.gle/at6Uc2pfSiB53pCx8)
 - Email [sfvalleyaiclub@gmail.com](mailto:sfvalleyaiclub@gmail.com)
+
+## Community projects
+
+`projects.html` lists community projects. The registration resource URL is defined in
+`_config.yml` with `src=club_website` for website attribution. Event and venue QR codes
+should link directly to the resource with their own source identifiers.
+
+The header navigation stays visible at all screen sizes; Projects has its own page.

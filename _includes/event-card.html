@@ -14,8 +14,10 @@
       {% if event.opening_remarks %}<div><dt>Opening remarks</dt><dd>{{ event.opening_remarks }}</dd></div>{% endif %}
       {% if theme %}<div><dt>Theme</dt><dd><span class="theme-badge" style="--badge:{{ theme.accent }}">{{ theme.short }}</span></dd></div>{% endif %}
     </dl>
-    {% if event.join_url %}
+    {% if event.join_url and event.date >= site.time %}
       <a class="button button-yellow event-cta" href="{{ event.join_url }}" target="_blank" rel="noreferrer">{{ event.join_label | default: "Join on Zoom" }} <span aria-hidden="true">&#8599;</span></a>
+    {% elsif event.date < site.time %}
+      <a class="text-link past-event-link" href="{{ event.url | relative_url }}">View event details &#8594;</a>
     {% endif %}
   </div>
   {% if event.panelists %}
