@@ -2,15 +2,11 @@
 layout: default
 title: Home
 ---
-<section class="hero" id="top">
+<section class="hero" id="main">
   <div class="hero-copy">
     <p class="eyebrow"><span></span> Youth-led in the San Fernando Valley</p>
     <h1>Learn AI. Build together. <em>Serve the Valley.</em></h1>
     <p class="hero-description">A welcoming AI community for middle school and high school students&#8212;with space to explore, create, and learn alongside college mentors.</p>
-    <div class="hero-actions">
-      <a class="button" href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Share your interests <span aria-hidden="true">&#8599;</span></a>
-      <a class="text-link" href="{{ '/about/' | relative_url }}">What the club does <span aria-hidden="true">&#8594;</span></a>
-    </div>
     <p class="microcopy">No experience required. Curiosity is enough.</p>
   </div>
   <div class="hero-visual">
@@ -22,57 +18,9 @@ title: Home
   </div>
 </section>
 
-<section class="trust-strip" aria-label="Club highlights">
-  <p><span>01</span> High-school student led</p>
-  <p><span>02</span> Guided by UCLA faculty and student mentors</p>
-  <p><span>03</span> In collaboration with CHEER</p>
-</section>
-
-<div id="main"></div>
-
-<section class="section-shell home-projects">
-  <div class="section-heading home-section-heading">
-    <div><p class="section-kicker">Community projects</p><h2>Built here. For the Valley.</h2></div>
-    <a class="text-link" href="{{ '/projects/' | relative_url }}">Explore projects &#8594;</a>
-  </div>
-  {% include registration-project.html %}
-</section>
-
-{% assign upcoming = site.events | where_exp: "e", "e.date >= site.time" | sort: "date" %}
-{% assign past = site.events | where_exp: "e", "e.date < site.time" | sort: "date" | reverse %}
-<section class="section-shell home-event">
-  <div class="section-heading home-section-heading">
-    <div><p class="section-kicker">Events</p><h2>{% if upcoming.size > 0 %}Meet. Learn. Make something.{% else %}From our community.{% endif %}</h2></div>
-    <a class="text-link" href="{{ '/events/' | relative_url }}">All events &#8594;</a>
-  </div>
-  {% if upcoming.size > 0 %}
-    {% include event-card.html event=upcoming.first %}
-  {% elsif past.size > 0 %}
-    {% include event-card.html event=past.first flag="Past event" %}
-  {% else %}
-    <p class="page-intro">Future events will be posted here. Visit Join to share your interests.</p>
-  {% endif %}
-</section>
-
-<section class="theme-strip-section">
-  <div class="section-shell">
-    <div class="section-heading home-section-heading">
-      <div>
-        <p class="section-kicker">Three themes</p>
-        <h2>Pick a place to start.</h2>
-      </div>
-      <a class="text-link" href="{{ '/about/' | relative_url }}">More about the club <span aria-hidden="true">&#8594;</span></a>
-    </div>
-    <ul class="theme-strip">
-      {% for theme in site.data.themes %}
-        <li style="--card-accent:{{ theme.accent }}">
-          <span class="theme-strip-number">{{ theme.number }}</span>
-          <h3>{{ theme.name }}</h3>
-          <p>{{ theme.tags | join: " &#183; " }}</p>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-
-{% include join-cta.html %}
+<nav class="home-directory" aria-label="Explore the club">
+  <a href="{{ '/projects/' | relative_url }}"><strong>Projects <span aria-hidden="true">&#8594;</span></strong><span>Explore our community work.</span></a>
+  <a href="{{ '/events/' | relative_url }}"><strong>Events <span aria-hidden="true">&#8594;</span></strong><span>Find upcoming and past activities.</span></a>
+  <a href="{{ '/about/' | relative_url }}"><strong>About <span aria-hidden="true">&#8594;</span></strong><span>Get to know the club.</span></a>
+  <a href="{{ '/join/' | relative_url }}"><strong>Join <span aria-hidden="true">&#8594;</span></strong><span>Learn, volunteer, or mentor.</span></a>
+</nav>
