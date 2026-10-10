@@ -29,6 +29,8 @@ defaults:
 nav:
   - title: Home
     url: /
+  - title: Learn
+    url: /learn/
   - title: Projects
     url: /projects/
   - title: Events

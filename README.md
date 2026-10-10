@@ -45,6 +45,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Planned activities
 
+- **Monthly skills series:** six two-hour meetings using LA 311 data, with one hour of teaching and one hour of hands-on office hours. See [the curriculum](https://valleyaiclub.org/learn/).
 - **AI workshops:** friendly, hands-on introductions for students at any experience level
 - **AI camps:** longer sessions to go deeper on a theme with mentors alongside you
 - **Datathons:** explore real datasets, form questions, and communicate discoveries
@@ -68,17 +69,27 @@ and hosted on GitHub Pages. GitHub builds the site automatically on every push t
 ├── _config.yml         # Site settings, navigation, collections
 ├── _data/
 │   ├── themes.yml      # The three themes (name, blurb, photo, accent colour)
-│   └── activities.yml  # Workshops, camps, datathons, hackathons, codathons
+│   ├── activities.yml  # Workshops, camps, datathons, hackathons, codathons
+│   └── syllabus.yml    # Monthly skills and optional research questions
 ├── _events/            # One markdown file per event
 ├── _includes/          # Header, footer, event cards, join CTA
 ├── _layouts/           # default, page, event
 ├── index.html          # Home
 ├── events.html         # Events calendar
+├── learn.html          # Six-month AI and statistics skills series
 ├── about.html          # About
 ├── join.html           # Join
 ├── 404.html
 └── assets/             # Styles, images, and fonts
 ```
+
+### Updating the monthly skills series
+
+`learn.html` contains the student-facing overview, tools, and research track.
+Edit the six monthly lessons and research questions in `_data/syllabus.yml`.
+The Home and Events pages link to `/learn/`; meeting dates remain unannounced
+until actual dates and locations are confirmed. Use the event collection below
+when individual meetings are scheduled.
 
 ### Adding an event
 

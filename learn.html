@@ -1,0 +1,83 @@
+---
+layout: page
+title: Learn
+kicker: Six-month skills series
+heading: Build a project, one skill at a time.
+intro: Learn practical AI, coding, and statistics skills through one project using Los Angeles 311 data. Start with GitHub and a website, then explore real data and train your first prediction model.
+permalink: /learn/
+description: A six-month AI and statistics series for middle and high school students. Each monthly meeting includes one hour of teaching and one hour of hands-on office hours.
+---
+<div class="syllabus-page">
+  <section class="section-shell syllabus-overview" aria-labelledby="series-format">
+    <div class="series-facts" aria-label="Series at a glance">
+      <span>Grades 6–12</span>
+      <span>Beginners welcome</span>
+      <span>6 monthly meetings</span>
+      <span>2 hours each</span>
+    </div>
+    <div class="series-format">
+      <div>
+        <p class="section-kicker">Each monthly meeting</p>
+        <h2 id="series-format">Learn together. Then try it yourself.</h2>
+        <p>Students with no coding experience and students who already know some Python are welcome. Every meeting includes a beginner task, an optional challenge, and a working starting point so you can rejoin after an absence.</p>
+      </div>
+      <ol class="series-hours">
+        <li><span class="hour-label">First 60 minutes</span><strong>Teaching &amp; live demos</strong><p>Learn one main skill and see it in action.</p></li>
+        <li><span class="hour-label">Next 60 minutes</span><strong>Hands-on office hours</strong><p>Work on the monthly exercise at your own pace, with help from mentors.</p></li>
+      </ol>
+    </div>
+    <p class="series-outcome"><strong>What you’ll build:</strong> a project website, a Python analysis notebook, two related charts, and a simple prediction model. Keep a short log of how you used AI and checked its suggestions.</p>
+    <div class="series-actions">
+      <a class="button" href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Join the interest list <span aria-hidden="true">&#8599;</span></a>
+      <p>Dates and meeting details will be announced.</p>
+    </div>
+  </section>
+
+  <section class="section-shell syllabus-schedule" aria-labelledby="monthly-plan">
+    <div class="section-heading">
+      <p class="section-kicker">Your six-month path</p>
+      <h2 id="monthly-plan">From a first commit to a first model.</h2>
+    </div>
+    <ol class="month-grid">
+      {% for month in site.data.syllabus.months %}
+      <li class="month-card">
+        <p class="month-number">Month {{ forloop.index }}</p>
+        <h3>{{ month.title }}</h3>
+        <p class="month-tools">{{ month.tools }}</p>
+        <dl>
+          <dt>Learn</dt><dd>{{ month.skill }}</dd>
+          <dt>Build during office hours</dt><dd>{{ month.exercise }}</dd>
+          <dt>AI practice</dt><dd>{{ month.ai }}</dd>
+        </dl>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="section-shell syllabus-tools" aria-labelledby="toolkit-heading">
+    <p class="section-kicker">Our toolkit</p>
+    <h2 id="toolkit-heading">Use AI. Check its work. Build your own model.</h2>
+    <p><strong>ChatGPT</strong> is our main assistant for drafting, coding, debugging, and checking explanations. <strong>GitHub and GitHub Pages</strong> save and share our work. <strong>Google Colab</strong> runs Python notebooks, <strong>pandas and matplotlib</strong> help us analyze and plot data, and <strong>scikit-learn</strong> trains the first predictive model.</p>
+    <p><strong>GitHub Copilot</strong> is an optional coding assistant for experienced students. Paid AI plans are not required. Students use eligible, approved accounts; instructor demonstrations, prepared responses, and local files provide alternatives when individual access is unavailable.</p>
+  </section>
+
+  <section class="section-shell syllabus-research" aria-labelledby="research-heading">
+    <div class="research-panel">
+      <p class="section-kicker">Optional mentored research</p>
+      <h2 id="research-heading">Take a question further.</h2>
+      <p>Older or more experienced students can develop a research question with a mentor. Possible questions include:</p>
+      <ul>
+        {% for question in site.data.syllabus.research_questions %}
+        <li>{{ question }}</li>
+        {% endfor %}
+      </ul>
+      <p>Teams can work toward a reproducible research brief, a poster, or a potential journal submission. This track extends beyond the six meetings; publication depends on the study and the venue’s requirements.</p>
+    </div>
+  </section>
+
+  <section class="section-shell syllabus-data" aria-labelledby="data-heading">
+    <h2 id="data-heading">Real data, careful conclusions.</h2>
+    <p>We use a prepared teaching extract and aggregate counts from <a href="https://data.lacity.org/City-Infrastructure-Service-Requests/MyLA311-Cases-2026/2cy6-i7zn/about_data">Los Angeles 311 open data</a>. Recorded requests do not capture every community need, and a closed ticket does not necessarily mean completed service. Our public charts use aggregate data.</p>
+    <p>The curriculum adapts practical topics from <a href="https://github.com/ucla-biostat-203b/2026winter">UCLA Biostatistics 203B</a>.</p>
+  </section>
+</div>
