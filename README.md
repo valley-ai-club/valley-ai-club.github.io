@@ -136,7 +136,10 @@ Interested in learning, building, mentoring, or contributing?
 ## Community projects
 
 `projects.html` lists community projects. The registration resource URL is defined in
-`_config.yml` with `src=club_website` for website attribution. Event and venue QR codes
-should link directly to the resource with their own source identifiers.
+`_config.yml` and points to the CHEER project page with `src=club_website` for website
+attribution and `cheerLang=en` for English. Use `cheerLang` on the CHEER page because
+Wix reserves the `lang` parameter. Event and venue QR codes should link to the CHEER
+project page with their own source identifiers; its questionnaire links preserve
+that source.
 
 The header navigation stays visible at all screen sizes; Projects has its own page.
