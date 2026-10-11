@@ -1,21 +1,21 @@
 months:
   - title: GitHub
-    output: Start a project repository and save your first changes.
-    tools: GitHub
-  - title: Your website
-    output: Publish a website for your own project.
-    tools: GitHub Pages
-  - title: Load real data
-    output: Open a public dataset in your first Python notebook.
+    output: Create a repository and make your first commit.
+    tools: Repositories & commits
+  - title: Build a website
+    output: Publish your project page.
+    tools: HTML · GitHub Pages
+  - title: Python & datasets
+    output: Load a dataset and explore its columns.
     tools: Colab · pandas
-  - title: Clean the data
-    output: Find missing values, fix labels, and check duplicates.
+  - title: Data wrangling
+    output: Fix missing values, labels, and duplicates.
     tools: pandas
-  - title: Make two charts
-    output: Compare groups and explain the variation in your data.
+  - title: Statistics & charts
+    output: Make two charts and explain what varies.
     tools: matplotlib
-  - title: Train a model
-    output: Train a prediction model and test it against a simple baseline.
+  - title: Your first model
+    output: Test a prediction model against a simple baseline.
     tools: scikit-learn
 
 research_questions:

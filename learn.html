@@ -2,67 +2,77 @@
 layout: default
 title: Learn
 permalink: /learn/
-description: Learn AI and statistics with UCLA professors, invited AI researchers, and UCLA student mentors and teaching assistants. Six monthly workshops for middle and high school students.
+description: Six monthly AI and statistics workshops for middle and high school students. Learn GitHub, websites, Python, data analysis, and machine learning, with teaching and hands-on office hours.
 ---
 <div class="learn-page" id="main">
-  <section class="learn-hero" aria-labelledby="learn-heading">
-    <p class="learn-eyebrow">AI &amp; statistics · Six-month club series</p>
-    <h1 id="learn-heading">Learn AI with<br><em>UCLA professors.</em></h1>
-    <dl class="learn-people" aria-label="Speakers and support">
-      <div><dt>Invited AI researchers</dt><dd>Guest speakers</dd></div>
-      <div><dt>UCLA students</dt><dd>Mentors &amp; teaching assistants</dd></div>
-    </dl>
-    <p class="learn-audience">Middle &amp; high school students · Beginners welcome</p>
-    <div class="learn-signup">
-      <a class="button" href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Join the interest list <span aria-hidden="true">&#8599;</span></a>
+  <header class="learn-heading">
+    <div>
+      <h1>Workshops</h1>
+      <p class="learn-subtitle">AI &amp; statistics · A six-month series</p>
+      <p class="learn-audience">Middle &amp; high school students. Beginners welcome.</p>
+    </div>
+    <div class="learn-registration">
+      <a href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Join the interest list <span aria-hidden="true">↗</span></a>
       <span>Dates to be announced</span>
     </div>
-  </section>
+  </header>
 
-  <section class="learn-format" aria-label="Each monthly meeting">
-    <p class="learn-format-label">Every month</p>
-    <p><strong>1 hour</strong><span>Teaching &amp; live demo</span></p>
-    <span class="learn-plus" aria-hidden="true">+</span>
-    <p><strong>1 hour</strong><span>Office hours · Build with help</span></p>
-  </section>
+  <div class="learn-columns">
+    <div class="learn-course">
+      <section aria-labelledby="monthly-plan">
+        <h2 id="monthly-plan">Six-month plan</h2>
+        <p class="learn-format">Each month: <strong>1 hour teaching</strong> + <strong>1 hour office hours</strong>.</p>
+        <table class="learn-schedule">
+          <caption class="visually-hidden">Monthly workshops and hands-on office hour exercises</caption>
+          <thead><tr><th scope="col">Month</th><th scope="col">Workshop</th><th scope="col">In office hours</th></tr></thead>
+          <tbody>
+            {% for month in site.data.syllabus.months %}
+            <tr>
+              <th scope="row"><span class="visually-hidden">Month </span>{{ forloop.index }}</th>
+              <td class="learn-topic"><strong>{{ month.title }}</strong><span>{{ month.tools }}</span></td>
+              <td class="learn-practice">{{ month.output }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <p class="learn-datasets">Work with public datasets in health, the environment, or community life.</p>
+      </section>
 
-  <section class="learn-plan" aria-labelledby="monthly-plan">
-    <div class="learn-section-heading">
-      <h2 id="monthly-plan">What you’ll build</h2>
-      <span>One skill each month</span>
-    </div>
-    <ol class="learn-months">
-      {% for month in site.data.syllabus.months %}
-      <li class="learn-month">
-        <span class="learn-number"><span class="visually-hidden">Month </span>0{{ forloop.index }}</span>
-        <div class="learn-month-copy">
-          <h3>{{ month.title }}</h3>
-          <p>{{ month.output }}</p>
+      <details class="learn-research">
+        <summary>For students ready for a research project</summary>
+        <div class="learn-research-body">
+          <p>Choose a question and develop it with a mentor. For example:</p>
+          <ul>
+            {% for question in site.data.syllabus.research_questions %}
+            <li>{{ question }}</li>
+            {% endfor %}
+          </ul>
+          <p>Share your work as a research brief or poster. A potential paper takes further work with a mentor.</p>
         </div>
-        <span class="learn-tool">{{ month.tools }}</span>
-      </li>
-      {% endfor %}
-    </ol>
-    <p class="learn-datasets">Explore datasets in health, the environment, and community life.</p>
-  </section>
-
-  <aside class="learn-ai" aria-labelledby="ai-heading">
-    <h2 id="ai-heading">AI in every session</h2>
-    <p>Use <strong>ChatGPT</strong> to explain code, debug, and test ideas. Check its suggestions against your results. <strong>Copilot</strong> is optional for experienced coders.</p>
-    <small>No paid AI plan required. Instructor-led options are available for students without eligible accounts.</small>
-  </aside>
-
-  <details class="learn-research">
-    <summary><span><strong>Go deeper</strong><span>Optional mentored research</span></span><span class="learn-disclosure" aria-hidden="true">+</span></summary>
-    <div class="learn-research-body">
-      <ul>
-        {% for question in site.data.syllabus.research_questions %}
-        <li>{{ question }}</li>
-        {% endfor %}
-      </ul>
-      <p>Extend your project into a research brief or poster. A potential paper requires further work with a mentor.</p>
+      </details>
     </div>
-  </details>
 
-  <p class="learn-sources"><a href="https://data.lacity.org/City-Infrastructure-Service-Requests/MyLA311-Cases-2026/2cy6-i7zn/about_data">LA 311</a> is one example dataset. Curriculum inspired by <a href="https://github.com/ucla-biostat-203b/2026winter">UCLA Biostatistics 203B</a>.<br>Independent community club; not an official UCLA program.</p>
+    <aside class="learn-sidebar" aria-label="Workshop support">
+      <section aria-labelledby="people-heading">
+        <h2 id="people-heading">Speakers &amp; mentors</h2>
+        <dl class="learn-people">
+          <div><dt>Teaching</dt><dd>UCLA professors</dd></div>
+          <div><dt>Guest talks</dt><dd>Invited AI researchers</dd></div>
+          <div><dt>Mentors &amp; teaching assistants</dt><dd>UCLA students</dd></div>
+        </dl>
+        <p class="learn-support-note">Bring your questions and unfinished work to office hours.</p>
+      </section>
+      <section class="learn-ai" aria-labelledby="ai-heading">
+        <h2 id="ai-heading">Working with AI</h2>
+        <p>Use ChatGPT to explain code and debug. Test its suggestions against your results.</p>
+        <p>GitHub Copilot is optional for experienced coders.</p>
+        <small>No paid AI plan needed. Instructor-led options are available.</small>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="learn-sources">
+    <p>Curriculum reference: <a href="https://github.com/ucla-biostat-203b/2026winter">UCLA Biostatistics 203B</a>. Example dataset: <a href="https://data.lacity.org/City-Infrastructure-Service-Requests/MyLA311-Cases-2026/2cy6-i7zn/about_data">LA 311</a>.</p>
+    <p>Independent community club; not an official UCLA program.</p>
+  </footer>
 </div>

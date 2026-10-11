@@ -84,65 +84,59 @@
 }
 @media(max-width:360px){.club-site .main-tabs a{padding:10px 9px;font-size:12px}.club-site .welcome-page{padding:28px 20px}.club-site .welcome-page h1{font-size:32px}}
 
-/* Monthly skills series: compact overview and readable, sequential lessons. */
-.welcome-series{max-width:610px;margin-top:30px;padding:24px;background:#edf8fb;border:1px solid #dce8ea;border-radius:16px}
-.welcome-series h2,.series-event-callout h2{color:var(--navy);font-size:23px;line-height:1.25;font-weight:700;letter-spacing:-.025em}
-.welcome-series p:not(.section-kicker),.series-event-callout p:not(.section-kicker){color:#4d667c;font-size:15px;line-height:1.7;margin:12px 0 18px}
-.welcome-series .text-link,.series-event-callout .text-link{display:inline-block;font-size:14px;line-height:1.6}
-.series-event-callout{padding:28px;margin-bottom:36px;border:1px solid #dce5e0;border-left:5px solid #287a72;border-radius:16px;background:#f2f6f4}
-.series-event-callout .series-date-note{font-size:13px;margin-bottom:0;color:#607487}
-/* A focused course page: instructors, meeting format, and six short steps. */
-.learn-page{max-width:1040px;margin:0 auto;padding:48px 44px 28px}
-.learn-hero{padding-bottom:30px}
-.learn-eyebrow{color:#287a72;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-bottom:20px}
-.club-site .learn-hero h1{font-size:clamp(32px,3.6vw,48px);font-weight:700;line-height:1.14;letter-spacing:-.045em;max-width:760px}
-.learn-hero h1 em{display:inline;color:#177fb1;font-style:normal}
-.learn-people{display:flex;flex-wrap:wrap;gap:16px 40px;margin-top:24px}
-.learn-people>div{border-left:3px solid #287a72;padding-left:14px}
-.learn-people dt{font-size:16px;font-weight:700;color:#0d3155;line-height:1.4}
-.learn-people dd{font-size:13px;line-height:1.6;color:#4d667c;margin-top:4px}
-.learn-audience{font-size:13px;color:#607487;margin-top:14px;line-height:1.6}
-.learn-signup{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:24px}
-.learn-signup .button{min-height:44px;font-size:14px;padding:0 20px}
-.learn-signup>span{font-size:12px;color:#607487}
-.learn-format{display:grid;grid-template-columns:auto minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:22px;background:#0d3155;color:#fff;padding:23px 26px;border-radius:12px}
-.learn-format-label{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#a9cadc}
-.learn-format p:not(.learn-format-label){display:flex;flex-direction:column;gap:4px}
-.learn-format strong{font-size:27px;line-height:1.1;letter-spacing:-.03em;color:#ffd526}
-.learn-format p>span{font-size:12px;line-height:1.5;color:#fff}
-.learn-plus{color:#8ea8ba;font-size:24px;font-weight:400}
-.learn-plan{padding-top:34px}
-.learn-section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}
-.learn-section-heading h2{font-size:23px;font-weight:700;letter-spacing:-.025em;color:#0d3155;line-height:1.3}
-.learn-section-heading>span{font-size:12px;color:#607487}
-.learn-months{list-style:none;margin:0;padding:0;border-top:1px solid #dce5e0}
-.learn-month{display:grid;grid-template-columns:40px minmax(0,1fr) auto;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid #dce5e0}
-.learn-number{font-size:20px;color:#177fb1;font-weight:700;font-variant-numeric:tabular-nums;align-self:start;padding-top:2px}
-.learn-month h3{font-size:18px;font-weight:700;color:#0d3155;line-height:1.3}
-.learn-month p{font-size:14px;color:#4d667c;line-height:1.55;margin-top:4px}
-.learn-tool{font-size:11px;color:#285c56;background:#edf3ef;border-radius:5px;padding:5px 8px;white-space:nowrap}
-.learn-datasets{font-size:13px;line-height:1.65;color:#607487;margin-top:16px}
-.learn-ai{margin-top:26px;border-left:3px solid #177fb1;padding:2px 0 2px 18px}
-.learn-ai h2{font-size:16px;line-height:1.4;font-weight:700;color:#0d3155}
-.learn-ai p{font-size:14px;line-height:1.65;color:#4d667c;margin-top:7px;max-width:710px}
-.learn-ai small{display:block;font-size:12px;line-height:1.6;color:#607487;margin-top:8px}
-.learn-research{border-top:1px solid #dce5e0;border-bottom:1px solid #dce5e0;margin-top:28px}
-.learn-research summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;list-style:none}
-.learn-research summary::-webkit-details-marker{display:none}
-.learn-research summary>span:first-child{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.learn-research summary strong{font-size:17px;font-weight:700;color:#0d3155}
-.learn-research summary>span>span{font-size:12px;color:#607487}
-.learn-disclosure{font-size:25px;line-height:1;color:#177fb1;transition:transform .15s}
-.learn-research[open] .learn-disclosure{transform:rotate(45deg)}
-.learn-research-body{padding:0 0 20px;max-width:710px;color:#4d667c;font-size:14px;line-height:1.7}
-.learn-research-body ul{list-style:disc;padding-left:19px;display:grid;gap:6px}
-.learn-research-body p{margin-top:14px}
-.learn-research-body .learn-data-note{font-size:12px;color:#607487}
-.learn-sources{font-size:11px;color:#607487;line-height:1.7;margin-top:22px}
+/* Workshop information uses a course-page layout with a compact syllabus. */
+.welcome-series{max-width:610px;margin-top:30px;padding:24px 0;border-top:1px solid #dce5e0;border-bottom:1px solid #dce5e0}
+.welcome-series h2,.series-event-callout h2{color:var(--navy);font-size:21px;line-height:1.3;font-weight:600;letter-spacing:-.015em}
+.welcome-series p:not(.section-kicker),.series-event-callout p:not(.section-kicker){color:#4d667c;font-size:14px;line-height:1.7;margin:10px 0 14px}
+.welcome-series .text-link,.series-event-callout .text-link{display:inline-block;font-size:14px;line-height:1.6;text-decoration:underline;text-underline-offset:4px;font-weight:600}
+.series-event-callout{padding:0 0 28px;margin-bottom:32px;border-bottom:1px solid #dce5e0}
+.series-event-callout .series-date-note{font-size:12px;margin-bottom:0;color:#607487}
+.learn-page{max-width:1140px;margin:0 auto;padding:40px 44px 28px;color:#344454}
+.learn-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-bottom:28px;border-bottom:1px solid #cdd5d8}
+.club-site .learn-heading h1{font-size:30px;font-weight:600;line-height:1.25;letter-spacing:-.025em;color:#20374b}
+.learn-subtitle{font-size:16px;line-height:1.6;margin-top:9px;color:#344454}
+.learn-audience{font-size:13px;line-height:1.6;margin-top:5px;color:#5d6a75}
+.learn-registration{display:flex;flex-direction:column;align-items:flex-start;gap:8px;flex-shrink:0}
+.learn-registration a{display:inline-flex;align-items:center;gap:8px;padding:9px 13px;min-height:42px;border:1px solid #9caeb8;border-radius:3px;color:#203e55;font-size:13px;font-weight:600}
+.learn-registration a:hover{background:#edf3f3;border-color:#365b70}
+.learn-registration>span{font-size:11px;color:#5d6a75}
+.learn-columns{display:grid;grid-template-columns:minmax(0,1fr) 224px;gap:34px;padding-top:30px}
+.learn-page h2{font-size:18px;font-weight:600;line-height:1.4;letter-spacing:-.015em;color:#20374b}
+.learn-format{font-size:13px;line-height:1.7;color:#5d6a75;margin-top:8px;margin-bottom:20px}
+.learn-format strong{font-weight:500;color:#344454}
+.learn-schedule{width:100%;table-layout:fixed;text-align:left;font-size:13px;line-height:1.6}
+.learn-schedule thead th{font-weight:500;color:#5d6a75;font-size:11px;padding:0 12px 9px 0;border-bottom:1px solid #98a9b4}
+.learn-schedule thead th:first-child{width:54px}
+.learn-schedule thead th:nth-child(2){width:44%}
+.learn-schedule tbody th,.learn-schedule td{padding:16px 12px 16px 0;border-bottom:1px solid #e0e5e6;vertical-align:top}
+.learn-schedule tbody th{color:#60717b;font-size:13px;font-weight:400;font-variant-numeric:tabular-nums}
+.learn-schedule td:last-child{padding-right:0}
+.learn-topic strong{display:block;font-size:14px;line-height:1.5;font-weight:600;color:#20374b}
+.learn-topic span{display:block;font-size:11px;line-height:1.6;color:#60717b;margin-top:3px}
+.learn-practice{color:#4d5c68}
+.learn-datasets{font-size:12px;line-height:1.7;color:#60717b;margin-top:16px}
+.learn-sidebar{border-left:1px solid #dce3e5;padding-left:24px}
+.learn-sidebar h2{font-size:15px}
+.learn-people{margin-top:18px}
+.learn-people>div+div{margin-top:16px}
+.learn-people dt{font-size:12px;line-height:1.5;color:#60717b}
+.learn-people dd{font-size:13px;line-height:1.6;color:#344454;margin-top:2px}
+.learn-support-note{font-size:12px;line-height:1.7;color:#60717b;margin-top:20px}
+.learn-ai{margin-top:28px;padding-top:22px;border-top:1px solid #dce3e5}
+.learn-ai p{font-size:13px;line-height:1.75;margin-top:12px;color:#4d5c68}
+.learn-ai small{display:block;font-size:11px;line-height:1.7;color:#60717b;margin-top:12px}
+.learn-research{margin-top:26px;border-top:1px solid #dce3e5;padding-top:17px}
+.learn-research summary{cursor:pointer;font-size:13px;font-weight:600;color:#203e55;line-height:1.7;padding:4px 0}
+.learn-research summary::marker{font-size:10px;color:#60717b}
+.learn-research-body{font-size:13px;line-height:1.75;color:#4d5c68;padding-top:12px}
+.learn-research-body ul{list-style:disc;padding-left:19px;margin-top:10px}
+.learn-research-body li+li{margin-top:6px}
+.learn-research-body p+p,.learn-research-body ul+p{margin-top:12px}
+.learn-sources{font-size:11px;line-height:1.8;color:#60717b;border-top:1px solid #dce3e5;padding-top:18px;margin-top:32px}
 .learn-sources a{text-decoration:underline;text-underline-offset:3px}
-.learn-sources span{margin:0 7px}
+.learn-page a:focus-visible,.learn-page summary:focus-visible{outline:2px solid #177fb1;outline-offset:4px}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media(max-width:1100px){.learn-format{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px}.learn-format-label{grid-column:1/-1}.learn-month{grid-template-columns:32px minmax(0,1fr)}.learn-tool{grid-column:2;justify-self:start}.learn-month{gap:5px 12px}}
-@media(max-width:760px){.learn-page{padding:30px 20px 24px}.club-site .learn-hero h1{font-size:34px}.learn-intro{font-size:16px}.learn-hero{padding-bottom:24px}.learn-eyebrow{font-size:10px;margin-bottom:16px}.learn-format{padding:20px}.learn-format strong{font-size:25px}.learn-format p>span{font-size:11px}.learn-section-heading{align-items:flex-start;flex-direction:column;gap:4px}.learn-plan{padding-top:28px}.learn-month{padding:15px 0}.learn-signup{gap:12px}.learn-research summary>span:first-child{gap:3px;flex-direction:column}.welcome-series{padding:22px}.series-event-callout{padding:24px}}
-@media(prefers-reduced-motion:reduce){.learn-disclosure{transition:none}}
+@media(max-width:1100px){.learn-page{padding:34px 30px 24px}.learn-columns{grid-template-columns:minmax(0,1fr) 196px;gap:24px}.learn-sidebar{padding-left:20px}.learn-schedule thead th:first-child{width:44px}.learn-schedule thead th:nth-child(2){width:45%}.learn-heading{align-items:flex-start}.learn-registration{padding-top:4px}}
+@media(max-width:940px){.learn-columns{grid-template-columns:1fr}.learn-sidebar{border-left:0;border-top:1px solid #cdd5d8;padding:24px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:30px}.learn-ai{margin:0;padding:0;border:0}.learn-heading{gap:20px}.learn-registration{flex-shrink:1}}
+@media(max-width:600px){.learn-page{padding:28px 20px 24px}.learn-heading{display:block;padding-bottom:24px}.club-site .learn-heading h1{font-size:28px}.learn-registration{margin-top:18px;flex-direction:row;align-items:center;gap:12px}.learn-registration>span{max-width:100px}.learn-columns{padding-top:24px;gap:24px}.learn-subtitle{font-size:15px}.learn-format{font-size:12px}.learn-schedule thead th:first-child{width:38px}.learn-schedule thead th:nth-child(2){width:42%}.learn-schedule th,.learn-schedule td{padding-right:9px}.learn-schedule tbody th,.learn-schedule td{padding-top:14px;padding-bottom:14px}.learn-topic strong{font-size:13px}.learn-topic span{font-size:10px}.learn-practice{font-size:12px}.learn-sidebar{grid-template-columns:1fr;gap:24px}.learn-people{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin-top:14px}.learn-people>div+div{margin-top:0}.learn-support-note{margin-top:14px}.learn-ai{border-top:1px solid #dce3e5;padding-top:20px}.learn-sources{margin-top:24px}.welcome-series{padding:22px 0}}
 @media(max-width:440px){.club-site .site-header .main-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}}
