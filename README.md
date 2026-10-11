@@ -45,7 +45,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Planned activities
 
-- **Monthly skills series:** six two-hour meetings using LA 311 data, with one hour of teaching and one hour of hands-on office hours. See [the curriculum](https://valleyaiclub.org/learn/).
+- **Monthly skills series:** learn with UCLA professors, invited AI researchers, and UCLA student mentors and teaching assistants. Six two-hour meetings cover practical AI and statistics skills using varied public datasets, with one hour of teaching and one hour of hands-on office hours. See [the curriculum](https://valleyaiclub.org/learn/).
 - **AI workshops:** friendly, hands-on introductions for students at any experience level
 - **AI camps:** longer sessions to go deeper on a theme with mentors alongside you
 - **Datathons:** explore real datasets, form questions, and communicate discoveries

@@ -3,22 +3,22 @@ months:
     output: Start a project repository and save your first changes.
     tools: GitHub
   - title: Your website
-    output: Publish a page for your LA 311 project.
+    output: Publish a website for your own project.
     tools: GitHub Pages
   - title: Load real data
-    output: Open an LA 311 dataset in your first Python notebook.
+    output: Open a public dataset in your first Python notebook.
     tools: Colab · pandas
   - title: Clean the data
     output: Find missing values, fix labels, and check duplicates.
     tools: pandas
   - title: Make two charts
-    output: Compare typical days and explain how request counts vary.
+    output: Compare groups and explain the variation in your data.
     tools: matplotlib
   - title: Train a model
-    output: Forecast daily requests and test against a simple baseline.
+    output: Train a prediction model and test it against a simple baseline.
     tools: scikit-learn
 
 research_questions:
-  - Are rainy days followed by more flooding or tree-related reports?
-  - Do recorded case-closure patterns differ by submission weekday?
-  - Can a model beat “the same weekday last week” at forecasting requests?
+  - Can weather and past measurements help predict air quality?
+  - How do patterns in public health data vary across places or over time?
+  - Which patterns in local service requests hold across neighborhoods?
