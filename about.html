@@ -2,15 +2,14 @@
 layout: page
 title: About
 kicker: Built for the Valley
-heading: A local place to explore AI&#8212;without the hype.
-intro: We're creating a youth-led club where students can understand how AI works, build useful projects, and think carefully about how technology can support people and communities across the San Fernando Valley.
+heading: About the club
+intro: A youth-led club for middle and high school students in the San Fernando Valley to learn AI, build projects, and contribute to their community.
 permalink: /about/
 description: Who The Valley AI Club is for, what we explore, and who guides the club.
 ---
 <section class="about section-shell">
   <div class="section-heading about-heading">
-    <p class="section-kicker">Who it's for</p>
-    <h2>Everyone starts somewhere.</h2>
+    <h2>Who can join</h2>
   </div>
   <div class="about-body">
     <p class="lead">Middle school and high school students are welcome. You do not need prior coding or AI experience&#8212;just an interest in learning with others.</p>
@@ -27,17 +26,14 @@ description: Who The Valley AI Club is for, what we explore, and who guides the 
   <div class="section-shell">
     <div class="section-heading split-heading">
       <div>
-        <p class="section-kicker">What we'll explore</p>
-        <h2>Three themes, one community.</h2>
+        <h2>What we explore</h2>
       </div>
       <p>Students can try one area or move between all three. Events are tagged by theme so you can follow what interests you.</p>
     </div>
     <div class="theme-grid">
       {% for theme in site.data.themes %}
-        <article class="theme-card" style="--card-accent:{{ theme.accent }}">
-          <div class="theme-photo"><img src="{{ theme.image | relative_url }}" alt="{{ theme.alt }}" loading="lazy"></div>
+        <article class="theme-card">
           <div class="theme-body">
-            <div class="theme-number">{{ theme.number }}</div>
             <h3>{{ theme.name }}</h3>
             <p>{{ theme.blurb }}</p>
             <ul aria-label="{{ theme.short }} topics">{% for tag in theme.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
@@ -51,8 +47,7 @@ description: Who The Valley AI Club is for, what we explore, and who guides the 
 <section class="activities section-shell">
   <div class="section-heading activities-heading">
     <div>
-      <p class="section-kicker">What we're planning</p>
-      <h2>Small starts. Bigger challenges later.</h2>
+      <h2>Planned activities</h2>
     </div>
     <p>We begin with accessible learning events, then grow into team-based challenges as the community takes shape.</p>
   </div>
@@ -61,7 +56,6 @@ description: Who The Valley AI Club is for, what we explore, and who guides the 
       <article>
         <div class="activity-index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</div>
         <div>
-          <span class="activity-label">{{ activity.label }}</span>
           <h3>{{ activity.name }}</h3>
           <p>{{ activity.blurb }}</p>
         </div>
@@ -70,11 +64,9 @@ description: Who The Valley AI Club is for, what we explore, and who guides the 
   </div>
 </section>
 
-<section class="mentorship">
-  <div class="mentorship-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<section class="mentorship section-shell">
   <div>
-    <p class="section-kicker light">Mentorship</p>
-    <h2>Student-led, with experienced guidance.</h2>
+    <h2>Mentors &amp; partners</h2>
     <p>The club is led by high school students and guided by UCLA faculty and student mentors with experience in Data Science and AI for Health education. We work in collaboration with CHEER.</p>
     <small>The Valley AI Club is a community initiative and does not represent an official UCLA program.</small>
   </div>
