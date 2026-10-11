@@ -1,39 +1,24 @@
 months:
-  - title: Start with GitHub
-    skill: Create a repository, edit a README, and save meaningful versions of your work.
-    exercise: Set up your LA 311 project with a question, a source link, and an AI-use log.
-    ai: Give ChatGPT a clear task and constraints, then check its draft for invented facts.
-    tools: GitHub · ChatGPT
-  - title: Build your website
-    skill: Edit a prepared HTML template and publish a simple site with GitHub Pages.
-    exercise: Add your project question, data source, and plan to a working webpage.
-    ai: Request one small website change, inspect the code, and test the result.
-    tools: GitHub Pages · ChatGPT
+  - title: GitHub
+    output: Start a project repository and save your first changes.
+    tools: GitHub
+  - title: Your website
+    output: Publish a page for your LA 311 project.
+    tools: GitHub Pages
   - title: Load real data
-    skill: Run Python notebook cells, load a CSV with pandas, and inspect its rows and columns.
-    exercise: Create a notebook that loads the LA 311 teaching dataset and checks it against a data dictionary.
-    ai: Ask for the smallest debugging fix and explain why it works.
-    tools: Google Colab · pandas · ChatGPT
-  - title: Clean and organize data
-    skill: Filter records, standardize labels, handle missing values, and add a weekday column.
-    exercise: Repair deliberately inserted errors in a practice dataset and document what changed.
-    ai: Test generated code on a tiny example before applying it to a larger table.
-    tools: pandas · ChatGPT
-  - title: Turn data into evidence
-    skill: Summarize daily counts, create useful charts, and distinguish a pattern from an explanation.
-    exercise: Publish two related charts with a numerical finding and one limitation.
-    ai: Check an AI-written caption against your results and correct unsupported claims.
-    tools: pandas · matplotlib · ChatGPT
-  - title: Train your first model
-    skill: Predict later request counts from earlier data and compare a decision tree with “the same weekday last week.”
-    exercise: Train the model, measure prediction error, and publish a short project brief.
-    ai: Check that future information has not slipped into the model. A model that loses to the baseline still teaches us something.
-    tools: scikit-learn · ChatGPT
+    output: Open an LA 311 dataset in your first Python notebook.
+    tools: Colab · pandas
+  - title: Clean the data
+    output: Find missing values, fix labels, and check duplicates.
+    tools: pandas
+  - title: Make two charts
+    output: Compare typical days and explain how request counts vary.
+    tools: matplotlib
+  - title: Train a model
+    output: Forecast daily requests and test against a simple baseline.
+    tools: scikit-learn
 
 research_questions:
-  - Can we predict tomorrow’s recorded requests better than a simple baseline?
-  - Are rain events followed by changes in flooding or tree-related requests?
-  - Do recorded closure patterns differ by submission weekday?
-  - How do phone, app, and web reporting shares vary across areas?
-  - How sensitive are conclusions to missing dates and status definitions?
-  - In an LA Dispatch simulation, how do service rules affect waiting times under stated staffing assumptions?
+  - Are rainy days followed by more flooding or tree-related reports?
+  - Do recorded case-closure patterns differ by submission weekday?
+  - Can a model beat “the same weekday last week” at forecasting requests?
