@@ -45,7 +45,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Planned activities
 
-- **AI & data science workshops:** hands-on workshops led by volunteer PhD data scientists, with invited AI researchers. Two-hour meetings cover the statistics and machine learning behind AI, using Python and R on varied public datasets, with one hour of teaching and one hour of hands-on office hours. The first workshop is Friday, November 6, 4:00–6:00 PM, on the CSUN campus. See [the curriculum](https://valleyaiclub.org/learn/).
+- **AI & data science workshops:** hands-on workshops taught by leading researchers in statistics and AI, with invited AI researchers. Two-hour meetings cover the statistics and machine learning behind AI, using Python and R on varied public datasets, with one hour of teaching and one hour of hands-on office hours. The first workshop is Friday, November 6, 4:00–6:00 PM, on the CSUN campus. See [the curriculum](https://valleyaiclub.org/learn/).
 - **AI workshops:** friendly, hands-on introductions for students at any experience level
 - **AI camps:** longer sessions to go deeper on a theme with mentors alongside you
 - **Datathons:** explore real datasets, form questions, and communicate discoveries
@@ -54,7 +54,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Mentorship and community
 
-The club is led by high school students and guided by volunteer PhD data scientists and mentors with experience in Data Science and AI for Health education. We work in collaboration with CHEER.
+The club is led by high school students and guided by leading researchers in statistics and AI, along with mentors experienced in Data Science and AI for Health education. We work in collaboration with CHEER.
 
 > The Valley AI Club is a community initiative and does not represent an official UCLA program.
 
@@ -89,7 +89,9 @@ and hosted on GitHub Pages. GitHub builds the site automatically on every push t
 Edit the workshop steps and research questions in `_data/syllabus.yml`.
 The Home and Events pages link to `/learn/`. The registration form link is
 `workshop_form` in `_config.yml`, and the first workshop's date appears on the
-Learn page and in the Events page callout. Each scheduled meeting gets its own
+Learn page and in the Events page callout. `register.html` serves
+valleyaiclub.org/register, the address printed on the flyer, and redirects to
+`workshop_form`, so changing that one setting also updates the flyer's address. Each scheduled meeting gets its own
 file in `_events/` (see below).
 
 ### Adding an event

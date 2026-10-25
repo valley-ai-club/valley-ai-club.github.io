@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /register/
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | {{ site.title }}</title>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ site.workshop_form }}">
+  <link rel="canonical" href="{{ site.workshop_form }}">
+  <script>location.replace({{ site.workshop_form | jsonify }});</script>
+</head>
+<body style="margin:0;padding:40px 20px;background:#fffdf8;color:#344454;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6">
+  <p>Taking you to the workshop registration form&hellip;</p>
+  <p>If nothing happens, <a href="{{ site.workshop_form }}">open the registration form</a>.</p>
+</body>
+</html>

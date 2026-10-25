@@ -11,8 +11,8 @@ join_url: https://forms.gle/41cBA1okMTVCk6Yu5
 join_label: Register
 ---
 
-Kick off our AI and data science workshop series, led by volunteer PhD data
-scientists. In this first session, you'll set up GitHub, create a repository,
+Kick off our AI and data science workshop series, taught by leading
+researchers in statistics and AI. In this first session, you'll set up GitHub, create a repository,
 and make your first commit. Each session has one hour of teaching followed by
 one hour of hands-on office hours.
 
