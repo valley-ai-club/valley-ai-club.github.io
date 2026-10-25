@@ -45,7 +45,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Planned activities
 
-- **Monthly skills series:** learn with UCLA professors, invited AI researchers, and UCLA student mentors and teaching assistants. Six two-hour meetings cover practical AI and statistics skills using varied public datasets, with one hour of teaching and one hour of hands-on office hours. See [the curriculum](https://valleyaiclub.org/learn/).
+- **AI & data science workshops:** hands-on workshops led by volunteer PhD data scientists, with invited AI researchers. Two-hour meetings cover the statistics and machine learning behind AI, using Python and R on varied public datasets, with one hour of teaching and one hour of hands-on office hours. The first workshop is Friday, November 6, 4:00–6:00 PM, on the CSUN campus. See [the curriculum](https://valleyaiclub.org/learn/).
 - **AI workshops:** friendly, hands-on introductions for students at any experience level
 - **AI camps:** longer sessions to go deeper on a theme with mentors alongside you
 - **Datathons:** explore real datasets, form questions, and communicate discoveries
@@ -54,7 +54,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Mentorship and community
 
-The club is led by high school students and guided by UCLA faculty and student mentors with experience in Data Science and AI for Health education. We work in collaboration with CHEER.
+The club is led by high school students and guided by volunteer PhD data scientists and mentors with experience in Data Science and AI for Health education. We work in collaboration with CHEER.
 
 > The Valley AI Club is a community initiative and does not represent an official UCLA program.
 
@@ -70,26 +70,27 @@ and hosted on GitHub Pages. GitHub builds the site automatically on every push t
 ├── _data/
 │   ├── themes.yml      # The three themes (name, blurb, photo, accent colour)
 │   ├── activities.yml  # Workshops, camps, datathons, hackathons, codathons
-│   └── syllabus.yml    # Monthly skills and optional research questions
+│   └── syllabus.yml    # Workshop steps and optional research questions
 ├── _events/            # One markdown file per event
 ├── _includes/          # Header, footer, event cards, join CTA
 ├── _layouts/           # default, page, event
 ├── index.html          # Home
 ├── events.html         # Events calendar
-├── learn.html          # Six-month AI and statistics skills series
+├── learn.html          # AI and data science workshop series
 ├── about.html          # About
 ├── join.html           # Join
 ├── 404.html
 └── assets/             # Styles, images, and fonts
 ```
 
-### Updating the monthly skills series
+### Updating the workshop series
 
 `learn.html` contains the student-facing overview, tools, and research track.
-Edit the six monthly lessons and research questions in `_data/syllabus.yml`.
-The Home and Events pages link to `/learn/`; meeting dates remain unannounced
-until actual dates and locations are confirmed. Use the event collection below
-when individual meetings are scheduled.
+Edit the workshop steps and research questions in `_data/syllabus.yml`.
+The Home and Events pages link to `/learn/`. The registration form link is
+`workshop_form` in `_config.yml`, and the first workshop's date appears on the
+Learn page and in the Events page callout. Each scheduled meeting gets its own
+file in `_events/` (see below).
 
 ### Adding an event
 

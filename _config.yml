@@ -9,6 +9,7 @@ baseurl: ""
 email: sfvalleyaiclub@gmail.com
 registration_url: https://www.sfvcheer.org/voter-registration?src=club_website&cheerLang=en
 interest_form: https://forms.gle/at6Uc2pfSiB53pCx8
+workshop_form: https://forms.gle/41cBA1okMTVCk6Yu5
 
 # Events are dated in the future by design; without this Jekyll treats
 # an upcoming event as an unpublished draft and never builds its page.
@@ -45,6 +46,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - flyers
 
 plugins:
   - jekyll-feed

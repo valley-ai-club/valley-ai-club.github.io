@@ -2,33 +2,33 @@
 layout: default
 title: Learn
 permalink: /learn/
-description: Six monthly AI and statistics workshops for middle and high school students. Learn GitHub, websites, Python, data analysis, and machine learning, with teaching and hands-on office hours.
+description: Hands-on AI and data science workshops for middle and high school students. Learn the statistics and machine learning behind AI, using GitHub, Python, and R on real data, with teaching and hands-on office hours.
 ---
 <div class="learn-page">
   <header class="learn-heading">
     <div>
       <h1>Workshops</h1>
-      <p class="learn-subtitle">AI &amp; statistics · A six-month series</p>
+      <p class="learn-subtitle">AI &amp; data science · Workshop series</p>
       <p class="learn-audience">Middle &amp; high school students. Beginners welcome.</p>
     </div>
     <div class="learn-registration">
-      <a href="{{ site.interest_form }}" target="_blank" rel="noreferrer">Join the interest list <span aria-hidden="true">↗</span></a>
-      <span>Dates to be announced</span>
+      <a href="{{ site.workshop_form }}" target="_blank" rel="noreferrer">Register <span aria-hidden="true">↗</span></a>
+      <span>First workshop: Fri, Nov 6, 4–6 PM, CSUN campus</span>
     </div>
   </header>
 
   <div class="learn-columns">
     <div class="learn-course">
-      <section aria-labelledby="monthly-plan">
-        <h2 id="monthly-plan">Six-month plan</h2>
-        <p class="learn-format">Each month: <strong>1 hour teaching</strong> + <strong>1 hour office hours</strong>.</p>
+      <section aria-labelledby="workshop-plan">
+        <h2 id="workshop-plan">What you'll learn</h2>
+        <p class="learn-format">Each workshop: <strong>1 hour teaching</strong> + <strong>1 hour office hours</strong>.</p>
         <table class="learn-schedule">
-          <caption class="visually-hidden">Monthly workshops and hands-on office hour exercises</caption>
-          <thead><tr><th scope="col">Month</th><th scope="col">Workshop</th><th scope="col">In office hours</th></tr></thead>
+          <caption class="visually-hidden">Workshops and hands-on office hour exercises</caption>
+          <thead><tr><th scope="col">Step</th><th scope="col">Workshop</th><th scope="col">In office hours</th></tr></thead>
           <tbody>
             {% for month in site.data.syllabus.months %}
             <tr>
-              <th scope="row"><span class="visually-hidden">Month </span>{{ forloop.index }}</th>
+              <th scope="row"><span class="visually-hidden">Step </span>{{ forloop.index }}</th>
               <td class="learn-topic"><strong>{{ month.title }}</strong><span>{{ month.tools }}</span></td>
               <td class="learn-practice">{{ month.output }}</td>
             </tr>
@@ -56,9 +56,8 @@ description: Six monthly AI and statistics workshops for middle and high school 
       <section aria-labelledby="people-heading">
         <h2 id="people-heading">Speakers &amp; mentors</h2>
         <dl class="learn-people">
-          <div><dt>Teaching</dt><dd>UCLA professors</dd></div>
+          <div><dt>Led by</dt><dd>Volunteer PhD data scientists</dd></div>
           <div><dt>Guest talks</dt><dd>Invited AI researchers</dd></div>
-          <div><dt>Mentors &amp; teaching assistants</dt><dd>UCLA students</dd></div>
         </dl>
         <p class="learn-support-note">Bring your questions and unfinished work to office hours.</p>
       </section>

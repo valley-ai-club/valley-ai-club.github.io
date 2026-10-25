@@ -5,7 +5,7 @@ months:
   - title: Build a website
     output: Publish your project page.
     tools: HTML · GitHub Pages
-  - title: Python & datasets
+  - title: Python, R & datasets
     output: Load a dataset and explore its columns.
     tools: Colab · pandas
   - title: Data wrangling
