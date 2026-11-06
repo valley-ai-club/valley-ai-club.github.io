@@ -45,7 +45,7 @@ A student panel on college applications, summer research, and what comes next, h
 
 ## Planned activities
 
-- **AI & data science workshops:** hands-on workshops taught by leading researchers in statistics and AI, with invited AI researchers. Two-hour meetings cover the statistics and machine learning behind AI, using Python and R on varied public datasets, with one hour of teaching and one hour of hands-on office hours. The first workshop is Friday, November 6, 4:00–6:00 PM, on the CSUN campus. See [the curriculum](https://valleyaiclub.org/learn/).
+- **AI & data science workshops:** hands-on workshops taught by leading researchers in statistics and AI, with invited AI researchers. Two-hour meetings cover the statistics and machine learning behind AI, using Python and R on varied public datasets, with one hour of teaching and one hour of hands-on office hours. The first workshop is Friday, November 6, 4:00–6:00 PM, on the CSUN campus. See [the curriculum](https://valleyaiclub.org/learn/). Lessons and starter files are in [valley-ai-club/workshops](https://github.com/valley-ai-club/workshops).
 - **AI workshops:** friendly, hands-on introductions for students at any experience level
 - **AI camps:** longer sessions to go deeper on a theme with mentors alongside you
 - **Datathons:** explore real datasets, form questions, and communicate discoveries

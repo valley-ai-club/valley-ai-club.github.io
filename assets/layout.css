@@ -60,6 +60,7 @@
 .learn-topic span{display:block;font-size:12px;line-height:1.6;color:#60717b;margin-top:3px}
 .learn-practice{color:#4d5c68}
 .learn-datasets{font-size:13px;line-height:1.7;color:#60717b;margin-top:16px}
+.learn-datasets+.learn-datasets{margin-top:4px}
 .learn-sidebar{border-left:1px solid #dce3e5;padding-left:24px}
 .learn-sidebar h2{font-size:15px}
 .learn-people{margin-top:18px}
